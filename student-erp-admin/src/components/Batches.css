@@ -1,0 +1,8 @@
+.batches{
+    display: flex;
+}
+
+h1{
+    position: absolute;
+    margin-left: 60%;
+}
