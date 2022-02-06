@@ -6,3 +6,8 @@ h1{
     position: absolute;
     margin-left: 60%;
 }
+
+.batch__names{
+    display: flex;
+    width: 50%;
+}
