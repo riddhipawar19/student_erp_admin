@@ -1,9 +1,9 @@
 .sidebar > img{
     height: 100vh;
     position: absolute;
-}
+} 
 
-.admin_name{
+.admin_name{ 
     position: relative;
     background-color: #CCD1FB;
     width: fit-content;
@@ -13,7 +13,7 @@
 
 .sidebar__menu{
     position: relative;
-}
+} 
 
 .menu__item{
     position: relative;
@@ -21,8 +21,8 @@
     width: 20vw;
     padding: 10px;
     margin: 20px;
-    background-color: rgba(173, 204, 252, 0.4);
-    justify-content: center;
+    background-color: rgba(173, 204, 252, 0.4); 
+    justify-content: center; 
     cursor: pointer;
 }
 

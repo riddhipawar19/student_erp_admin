@@ -1,9 +1,10 @@
-<<<<<<< HEAD
 import React, { useEffect , useState} from 'react';
 import Sidebar from './Sidebar';
 import './StudentRequests.css'
 import axios from 'axios';
-import Reqdata from './Reqdata';
+import RequestData from './RequestData';
+import { BsCheckLg } from "react-icons/bs"
+import { ImCross } from "react-icons/im"
 
 function StudentRequests() {
 
@@ -13,39 +14,39 @@ function StudentRequests() {
     axios.get("http://localhost:9000/get_data")
     .then(res => {
       setdata(res.data);
-=======
-import React, { useEffect } from 'react';
-import Sidebar from './Sidebar';
-import './StudentRequests.css'
-import axios from 'axios';
-
-function StudentRequests() {
-
-  useEffect(() => {
-    axios.get("http://localhost:9000/get_data")
-    .then(res => {
->>>>>>> origin/main
       console.log(res.data);
     })
   }, []);
   
-<<<<<<< HEAD
-  return <div className='parent'>
-        <Sidebar/>
+  return <>
+  <div className='parent'>
+  <Sidebar/>
+        <div className="req__main">
         {data.map (data => {
-          return <Reqdata full_name={data.full_name} course={data.course}/>
-        })}
+          return <div className="data">
+          <div className="data__items">
+          <div>{data.full_name}</div>
+          <div>{data.course}</div>
+
+          <div className="control__btns">
+          <div className="btn" id="accept__btn">
+            ACCEPT
+            <BsCheckLg/>
+          </div>
+          <div className="btn" id="deny__btn">
+            DENY
+            <ImCross/>
+          </div>
+          </div>
           
+          </div>
+          </div>
+        })}
       </div>
-      
+      </div>
+      </>
       
   
-=======
-  return <div className="student_requests">
-      <Sidebar/>
-      <h1>Student Requests</h1>
-  </div>;
->>>>>>> origin/main
 }
 
 export default StudentRequests;
