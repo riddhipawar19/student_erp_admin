@@ -1,7 +1,31 @@
-.student_requests{
-    display: flex;
+
+ul{
+    zoom:1; 
+    *display: inline; 
+    _height: 30px;
+    list-style: none;
+
 }
 
-h1{
-    margin-left: 50%;
+.data{
+
+    margin-top: 0%;
+    margin-left: 27%;
+    display: flex;
+ 
+}
+
+.parent{
+    margin-top: 0%;
+}
+
+.ul1{
+   
+
+}
+
+.ul2{
+
+    margin-left: 26%;
+
 }
